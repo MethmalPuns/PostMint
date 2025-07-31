@@ -19,12 +19,14 @@ const prompt = `Generate 5 short, unique, SEO-optimized social media posts for t
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
- model: "deepseek/deepseek-chat-v3-0324:free",
+   model: "GPT-3.5 Turbo",
        messages: [{ role: 'user', content: prompt }]
     })
   })
 
   const result = await response.json();
+  console.log("OpenRouter raw result:", JSON.stringify(result, null, 2)) // <- Add this line
+
   const text = result.choices?.[0]?.message?.content || ''
   const posts = text.split('\n').filter((p: string) => p.trim() !== '')
 
