@@ -7,7 +7,9 @@ import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
 import { Loader2, Sparkles, Zap } from "lucide-react"
+import EmailCaptureForm from "@/components/EmailCaptureForm"
 
+  
 export default function PostMint() {
   const [businessDescription, setBusinessDescription] = useState("")
   const [isGenerating, setIsGenerating] = useState(false)
@@ -16,12 +18,16 @@ export default function PostMint() {
 const [lastInputUsed, setLastInputUsed] = useState("")
 const { toast } = useToast()
 
-  const { quota, updateQuota } = useQuota()
+
 
   const generateSessionId = () => {
     return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
   }
   const sessionId = generateSessionId()
+
+    
+
+
 const handleGenerate = async () => {
   const trimmedInput = businessDescription.trim()
 
@@ -91,6 +97,8 @@ const handleGenerate = async () => {
           <p className="text-xl text-gray-600 mb-2">AI-Powered SEO Posts Generator</p>
           <p className="text-gray-500">Transform your business description into engaging social media posts</p>
         </div>
+
+                    {/*<EmailCaptureForm />*/}
 
         {/* Form */}
         <div className="space-y-8">
@@ -192,12 +200,15 @@ const handleGenerate = async () => {
             </div>
           )}
         </div>
-
+   
+  
         {/* Footer */}
         <div className="text-center mt-16 text-gray-500 text-sm">
           <p>© 2025 PostMint.</p>
         </div>
       </div>
     </div>
+    
   )
+   
 }
