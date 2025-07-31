@@ -3,6 +3,7 @@ import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 import { Toaster } from 'sonner'
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   title: 'PostMint — AI-Powered SEO Marketing Posts',
@@ -26,7 +27,10 @@ html {
 }
         `}</style>
       </head>
-      <body>{children}</body>
+      <body>{children}
+                <Analytics />
+
+      </body>
     </html>
   )
 }
