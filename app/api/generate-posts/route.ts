@@ -11,11 +11,11 @@ const prompt = `Generate 5 short, unique, SEO-optimized social media posts for t
 - Use relevant hashtags and emojis.
 - No titles, introductions, or summaries. Just the 5 posts.`
 
-
+ const apiKey = process.env.OPENROUTER_API_KEY
   const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${process.env.OPENROUTER_API_KEY}`,
+      'Authorization': `Bearer ${apiKey}`,
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
