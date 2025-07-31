@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
 import { Loader2, Sparkles, Zap } from "lucide-react"
-import EmailCaptureForm from "@/components/EmailCaptureForm"
+//import EmailCaptureForm from "@/components/EmailCaptureForm"
 
   
 export default function PostMint() {
