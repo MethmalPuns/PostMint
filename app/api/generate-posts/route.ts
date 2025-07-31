@@ -19,7 +19,7 @@ const prompt = `Generate 5 short, unique, SEO-optimized social media posts for t
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-   model: "GPT-3.5 Turbo",
+   model: "openai/gpt-3.5-turbo",
        messages: [{ role: 'user', content: prompt }]
     })
   })
