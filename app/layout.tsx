@@ -4,9 +4,9 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'PostMint — AI-Powered SEO Marketing Posts',
+  description: 'Generate SEO-optimized marketing posts instantly with PostMint AI. Save time and grow your brand with AI-powered content tailored for your audience',
+ 
 }
 
 export default function RootLayout({
