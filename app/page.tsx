@@ -1,5 +1,5 @@
 "use client"
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { useToast } from "@/components/ui/use-toast"
 import { useState } from "react"
 import { useQuota } from "@/hooks/useQuota"
