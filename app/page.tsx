@@ -10,7 +10,7 @@ import { Loader2, Sparkles, Zap } from "lucide-react"
 //import EmailCaptureForm from "@/components/EmailCaptureForm"
 
   
-export default function PostMint() {
+export default function CaptionCraftr() {
   const [businessDescription, setBusinessDescription] = useState("")
   const [isGenerating, setIsGenerating] = useState(false)
   const [generatedPosts, setGeneratedPosts] = useState<string[]>([])
@@ -78,7 +78,7 @@ const handleGenerate = async () => {
 
 
   const handleGumroadRedirect = (productType: "more-posts" | "new-input") => {
-    const baseUrl = "https://gumroad.com/l/postmint"
+    const baseUrl = "https://gumroad.com/l/CaptionCraftr"
     const url = `${baseUrl}?session_id=${sessionId}&type=${productType}`
     window.open(url, "_blank")
   }
@@ -91,7 +91,7 @@ const handleGenerate = async () => {
           <div className="flex items-center justify-center gap-2 mb-4">
             <Sparkles className="h-8 w-8 text-purple-600" />
             <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-              PostMint
+              CaptionCraftr
             </h1>
           </div>
           <p className="text-xl text-gray-600 mb-2">AI-Powered SEO Posts Generator</p>
@@ -204,7 +204,7 @@ const handleGenerate = async () => {
   
         {/* Footer */}
         <div className="text-center mt-16 text-gray-500 text-sm">
-          <p>© 2025 PostMint.</p>
+          <p>© 2025 CaptionCraftr.</p>
         </div>
       </div>
     </div>

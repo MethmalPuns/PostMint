@@ -6,8 +6,8 @@ import { Toaster } from 'sonner'
 import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
-  title: 'PostMint — AI-Powered SEO Marketing Posts',
-  description: 'Generate SEO-optimized marketing posts instantly with PostMint AI. Save time and grow your brand with AI-powered content tailored for your audience',
+  title: 'CaptionCraftr — AI-Powered SEO Marketing Posts',
+  description: 'Generate SEO-optimized marketing posts instantly with CaptionCraftr AI. Save time and grow your brand with AI-powered content tailored for your audience',
  
 }
 
